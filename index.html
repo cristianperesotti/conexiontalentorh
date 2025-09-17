@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="font-sans text-gray-800 bg-white">
+
   <header class="fixed top-0 w-full bg-white shadow z-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center h-20">
       <div class="flex items-center space-x-4">
@@ -39,6 +40,8 @@
     </div>
   </section>
 
+  ---
+
   <section id="servicios" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-center reveal-top">Nuestros servicios</h2>
@@ -49,81 +52,89 @@
           <h3 class="font-semibold">Selección de personal</h3>
           <p class="mt-2 text-sm text-gray-600">Encontramos el talento ideal para tu organización.</p>
         </div>
+      </div>
+    </div>
   </section>
 
-<section id="candidatos" class="py-20 bg-gray-50">
+  ---
+
+  <section id="candidatos" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-center reveal-top">Carga tu CV</h2>
       <p class="mt-2 text-center text-gray-600 reveal-top">Dejanos tus datos y nos pondremos en contacto con vos para futuras oportunidades.</p>
- <form 
-  action="https://formsubmit.co/peresotticr@gmail.com" 
-  method="POST" 
-  enctype="multipart/form-data"
-  class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto"
->
-  <!-- Configuración FormSubmit -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
-  <input type="hidden" name="_subject" value="Nuevo CV">
-  <input type="hidden" name="_template" value="table">
+      <form
+        action="https://formsubmit.co/peresotticr@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+        class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto"
+      >
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
+        <input type="hidden" name="_subject" value="Nuevo CV">
+        <input type="hidden" name="_template" value="table">
 
-  <div class="grid grid-cols-1 gap-4">
-    <input name="Nombre completo" class="border rounded px-3 py-2" placeholder="Nombre completo" required>
-    <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
-    <input name="Teléfono" type="tel" class="border rounded px-3 py-2" placeholder="Teléfono">
-    
-    <label for="cv_file" class="block text-sm font-medium text-gray-700">
-      Adjuntar Curriculum Vitae (PDF, DOCX)
-    </label>
-    <input 
-      type="file" 
-      id="cv_file" 
-      name="attachment" 
-      class="border rounded px-3 py-2 w-full" 
-      accept=".pdf,.doc,.docx" 
-      required
-    >
+        <div class="grid grid-cols-1 gap-4">
+          <input name="Nombre completo" class="border rounded px-3 py-2" placeholder="Nombre completo" required>
+          <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
+          <input name="Teléfono" type="tel" class="border rounded px-3 py-2" placeholder="Teléfono">
 
-    <div class="flex justify-end">
-      <button 
-        type="submit" 
-        class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
-      >Enviar</button>
+          <label for="cv_file" class="block text-sm font-medium text-gray-700">
+            Adjuntar Curriculum Vitae (PDF, DOCX)
+          </label>
+          <input
+            type="file"
+            id="cv_file"
+            name="attachment"
+            class="border rounded px-3 py-2 w-full"
+            accept=".pdf,.doc,.docx"
+            required
+          >
+
+          <div class="flex justify-end">
+            <button
+              type="submit"
+              class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+            >Enviar</button>
+          </div>
+        </div>
+      </form>
     </div>
-  </div>
-</form>
+  </section>
 
-<section id="empresas" class="py-20">
+  ---
+
+  <section id="empresas" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <h2 class="text-3xl font-bold text-center reveal-top">¿Sos una empresa?</h2>
       <p class="mt-2 text-center text-gray-600 reveal-top">Completa el formulario y nos contactaremos para ayudarte a encontrar el talento que necesitas.</p>
-  <form 
-  action="https://formsubmit.co/peresotticr@gmail.com" 
-  method="POST"
-  class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto"
->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
-  <input type="hidden" name="_subject" value="Nueva Solicitud Empresa">
-  <input type="hidden" name="_template" value="table">
+      <form
+        action="https://formsubmit.co/peresotticr@gmail.com"
+        method="POST"
+        class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto"
+      >
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
+        <input type="hidden" name="_subject" value="Nueva Solicitud Empresa">
+        <input type="hidden" name="_template" value="table">
 
-  <div class="grid grid-cols-1 gap-4">
-    <input name="Nombre de la empresa" class="border rounded px-3 py-2" placeholder="Nombre de la empresa" required>
-    <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
-    <input name="Teléfono" type="tel" class="border rounded px-3 py-2" placeholder="Teléfono">
-    <textarea name="Descripción del puesto" class="border rounded px-3 py-2" placeholder="Qué tipo de talento buscás" rows="4"></textarea>
+        <div class="grid grid-cols-1 gap-4">
+          <input name="Nombre de la empresa" class="border rounded px-3 py-2" placeholder="Nombre de la empresa" required>
+          <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
+          <input name="Teléfono" type="tel" class="border rounded px-3 py-2" placeholder="Teléfono">
+          <textarea name="Descripción del puesto" class="border rounded px-3 py-2" placeholder="Qué tipo de talento buscás" rows="4"></textarea>
 
-    <div class="flex justify-end">
-      <button 
-        type="submit" 
-        class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
-      >Enviar</button>
+          <div class="flex justify-end">
+            <button
+              type="submit"
+              class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+            >Enviar</button>
+          </div>
+        </div>
+      </form>
     </div>
-  </div>
-</form>
+  </section>
 
-
-  
+  ---
 
   <section id="nosotros" class="bg-indigo-700 text-white py-20">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
@@ -142,8 +153,9 @@
     </div>
   </section>
 
+  ---
 
-  <section id="contacto" class="py-20">
+  <section id="contacto" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
       <div class="reveal-left">
         <h2 class="text-3xl font-bold">Contacto</h2>
@@ -164,38 +176,33 @@
         </dl>
       </div>
 
-       <section id="contacto" class="py-20">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div class="reveal-left">
-        <h2 class="text-3xl font-bold">Contacto</h2>
-        <p class="mt-4 text-gray-600">Completá el formulario y te responderemos a la brevedad.</p>
-        <dl class="mt-6 space-y-4 text-sm text-gray-700">
-          <div>
-      <form 
-  action="https://formsubmit.co/peresotticr@gmail.com" 
-  method="POST"
-  class="bg-white p-6 rounded-lg shadow reveal-right"
->
-  <!-- Configuración FormSubmit -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
-  <input type="hidden" name="_subject" value="Nuevo Mensaje de Contacto">
-  <input type="hidden" name="_template" value="table">
+      <form
+        action="https://formsubmit.co/peresotticr@gmail.com"
+        method="POST"
+        class="bg-white p-6 rounded-lg shadow reveal-right"
+      >
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
+        <input type="hidden" name="_subject" value="Nuevo Mensaje de Contacto">
+        <input type="hidden" name="_template" value="table">
 
-  <div class="grid grid-cols-1 gap-4">
-    <input name="Nombre" class="border rounded px-3 py-2" placeholder="Nombre" required>
-    <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
-    <input name="Teléfono" class="border rounded px-3 py-2" placeholder="Teléfono">
-    <textarea name="Mensaje" class="border rounded px-3 py-2 h-28" placeholder="Mensaje" required></textarea>
+        <div class="grid grid-cols-1 gap-4">
+          <input name="Nombre" class="border rounded px-3 py-2" placeholder="Nombre" required>
+          <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
+          <input name="Teléfono" class="border rounded px-3 py-2" placeholder="Teléfono">
+          <textarea name="Mensaje" class="border rounded px-3 py-2 h-28" placeholder="Mensaje" required></textarea>
 
-    <div class="flex justify-end">
-      <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
-        Enviar
-      </button>
+          <div class="flex justify-end">
+            <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
-  </div>
-</form>
+  </section>
 
+  ---
 
   <footer class="bg-gray-900 text-gray-200 py-10">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -226,9 +233,7 @@
   </footer>
 
   <a href="https://wa.me/5493513125457" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110" target="_blank" aria-label="Contactar por WhatsApp">
-    <img src="https://res.cloudinary.com/dh1qqui2h/image/upload/v1757987932/WhatsApp.svg_yp3jt4.webp" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2C6.477 2 2 6.477 2 12c0 5.297 4.14 9.61 9.474 9.94l.026.002.002-.002c.088-.004.177-.006.264-.006 5.523 0 10-4.477 10-10S17.523 2 12 2zm3.336 12.064c-.09.2-.23.27-.4.32-.17.06-.35.08-.54.06-.17-.03-1.01-.47-1.17-.52-.15-.05-.26-.04-.37.1-.1.14-.37.49-.45.58-.09.1-.17.11-.31.04-.15-.08-.6-.22-.92-.51-.31-.29-.51-.71-.57-.82-.07-.1-.01-.15.06-.21.05-.04.11-.11.16-.17.05-.07.08-.12.1-.22.03-.1-.01-.19-.1-.31-.08-.12-.34-.82-.47-1.12-.13-.3-.26-.26-.37-.26-.11 0-.25-.01-.39-.01-.14 0-.37.05-.56.23-.19.18-.73.72-.73 1.76 0 1.04.75 2.04.85 2.19.1.15 1.41 2.21 3.42 3.05 2.01.84 2.41.63 2.85.58.44-.06 1.41-.57 1.61-1.14.2-.56.2-.95.14-1.05-.06-.1-.19-.15-.4-.22z"/>
-    </svg>
+    <img src="https://res.cloudinary.com/dh1qqui2h/image/upload/v1757987932/WhatsApp.svg_yp3jt4.webp" alt="WhatsApp Icon" class="h-8 w-8">
   </a>
 
   <script>
@@ -237,11 +242,6 @@
     ScrollReveal().reveal('.reveal-left', { origin: 'left', distance: '60px', duration: 1000, easing: 'ease-out' });
     ScrollReveal().reveal('.reveal-right', { origin: 'right', distance: '60px', duration: 1000, easing: 'ease-out' });
   </script>
+
 </body>
-
 </html>
-
-
-
-
-
