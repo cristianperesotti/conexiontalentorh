@@ -52,43 +52,70 @@
   </section>
 
 
-  <section id="candidatos" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center reveal-top">Carga tu CV</h2>
-      <p class="mt-2 text-center text-gray-600 reveal-top">Dejanos tus datos y nos pondremos en contacto con vos para futuras oportunidades.</p>
-      <form class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto">
-        <div class="grid grid-cols-1 gap-4">
-          <input class="border rounded px-3 py-2" placeholder="Nombre completo" required>
-          <input class="border rounded px-3 py-2" placeholder="Email" type="email" required>
-          <input class="border rounded px-3 py-2" placeholder="Teléfono" type="tel">
-          <label for="cv_file" class="block text-sm font-medium text-gray-700">Adjuntar Curriculum Vitae (PDF, DOCX)</label>
-          <input type="file" id="cv_file" name="cv_file" class="border rounded px-3 py-2 w-full" accept=".pdf,.doc,.docx" required>
-          <div class="flex justify-end">
-            <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Enviar</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section>
+ <form 
+  action="https://formsubmit.co/peresotticr@gmail.com" 
+  method="POST" 
+  enctype="multipart/form-data"
+  class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto"
+>
+  <!-- Configuración FormSubmit -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
+  <input type="hidden" name="_subject" value="Nuevo CV">
+  <input type="hidden" name="_template" value="table">
 
-  <section id="empresas" class="py-20">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center reveal-top">¿Sos una empresa?</h2>
-      <p class="mt-2 text-center text-gray-600 reveal-top">Completa el formulario y nos contactaremos para ayudarte a encontrar el talento que necesitas.</p>
-      <form class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto">
-        <div class="grid grid-cols-1 gap-4">
-          <input class="border rounded px-3 py-2" placeholder="Nombre de la empresa" required>
-          <input class="border rounded px-3 py-2" placeholder="Tu nombre y apellido" required>
-          <input class="border rounded px-3 py-2" placeholder="Email corporativo" type="email" required>
-          <input class="border rounded px-3 py-2" placeholder="Puesto a cubrir" required>
-          <textarea class="border rounded px-3 py-2 h-28" placeholder="Descripción del puesto o mensaje" required></textarea>
-          <div class="flex justify-end">
-            <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Enviar solicitud</button>
-          </div>
-        </div>
-      </form>
+  <div class="grid grid-cols-1 gap-4">
+    <input name="Nombre completo" class="border rounded px-3 py-2" placeholder="Nombre completo" required>
+    <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
+    <input name="Teléfono" type="tel" class="border rounded px-3 py-2" placeholder="Teléfono">
+    
+    <label for="cv_file" class="block text-sm font-medium text-gray-700">
+      Adjuntar Curriculum Vitae (PDF, DOCX)
+    </label>
+    <input 
+      type="file" 
+      id="cv_file" 
+      name="attachment" 
+      class="border rounded px-3 py-2 w-full" 
+      accept=".pdf,.doc,.docx" 
+      required
+    >
+
+    <div class="flex justify-end">
+      <button 
+        type="submit" 
+        class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+      >Enviar</button>
     </div>
-  </section>
+  </div>
+</form>
+
+
+  <form 
+  action="https://formsubmit.co/peresotticr@gmail.com" 
+  method="POST"
+  class="bg-white p-6 rounded-lg shadow reveal-bottom mt-10 max-w-2xl mx-auto"
+>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
+  <input type="hidden" name="_subject" value="Nueva Solicitud Empresa">
+  <input type="hidden" name="_template" value="table">
+
+  <div class="grid grid-cols-1 gap-4">
+    <input name="Nombre de la empresa" class="border rounded px-3 py-2" placeholder="Nombre de la empresa" required>
+    <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
+    <input name="Teléfono" type="tel" class="border rounded px-3 py-2" placeholder="Teléfono">
+    <textarea name="Descripción del puesto" class="border rounded px-3 py-2" placeholder="Qué tipo de talento buscás" rows="4"></textarea>
+
+    <div class="flex justify-end">
+      <button 
+        type="submit" 
+        class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
+      >Enviar</button>
+    </div>
+  </div>
+</form>
+
 
   
 
@@ -130,19 +157,31 @@
           </div>
         </dl>
       </div>
-      <form class="bg-white p-6 rounded-lg shadow reveal-right">
-        <div class="grid grid-cols-1 gap-4">
-          <input class="border rounded px-3 py-2" placeholder="Nombre" required>
-          <input class="border rounded px-3 py-2" placeholder="Email" type="email" required>
-          <input class="border rounded px-3 py-2" placeholder="Teléfono">
-          <textarea class="border rounded px-3 py-2 h-28" placeholder="Mensaje" required></textarea>
-          <div class="flex justify-end">
-            <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">Enviar</button>
-          </div>
-        </div>
-      </form>
+      <form 
+  action="https://formsubmit.co/peresotticr@gmail.com" 
+  method="POST"
+  class="bg-white p-6 rounded-lg shadow reveal-right"
+>
+  <!-- Configuración FormSubmit -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://conexiontalentorh.netlify.app/gracias.html">
+  <input type="hidden" name="_subject" value="Nuevo Mensaje de Contacto">
+  <input type="hidden" name="_template" value="table">
+
+  <div class="grid grid-cols-1 gap-4">
+    <input name="Nombre" class="border rounded px-3 py-2" placeholder="Nombre" required>
+    <input name="Email" type="email" class="border rounded px-3 py-2" placeholder="Email" required>
+    <input name="Teléfono" class="border rounded px-3 py-2" placeholder="Teléfono">
+    <textarea name="Mensaje" class="border rounded px-3 py-2 h-28" placeholder="Mensaje" required></textarea>
+
+    <div class="flex justify-end">
+      <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
+        Enviar
+      </button>
     </div>
-  </section>
+  </div>
+</form>
+
 
   <footer class="bg-gray-900 text-gray-200 py-10">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -187,5 +226,6 @@
 </body>
 
 </html>
+
 
 
